@@ -1,0 +1,27 @@
+package com.cg.allyworld.chatreceiver.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cg.allyworld.chatreceiver.entity.ChatWebsite;
+import com.cg.allyworld.chatreceiver.repository.ReceiverRepository;
+
+@Service
+public class ReceiverServiceImpl implements ReceiverService{
+
+	@Autowired
+	private ReceiverRepository repository;
+	
+	@Autowired
+	private ChatWebsite chat;
+	
+	@Override
+	public void sendMessage(Integer senderId, Integer receiverId, String message) {
+		chat.setSenderId(senderId);
+		chat.setReceiverId(receiverId);
+		chat.setMessage(message);
+		repository.save(chat);
+	}
+
+
+}

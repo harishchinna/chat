@@ -1,0 +1,22 @@
+package com.cg.allyworld.chatsender.entity;
+
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cg.allyworld.chatsender.resource.SenderResource;
+
+@RabbitListener(queues = "chatQ")
+public class Receiver {
+
+	@Autowired
+	private SenderResource resource;
+
+	@RabbitHandler
+	public void sendMessage(Object chatArray[]) {
+		System.out.println("sending");
+
+		resource.sendingMessageFronOneToOne((Integer) chatArray[0], (Integer) chatArray[1], (String) chatArray[2]);
+	}
+
+}

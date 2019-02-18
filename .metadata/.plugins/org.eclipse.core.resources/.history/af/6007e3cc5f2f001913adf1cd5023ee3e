@@ -1,0 +1,10 @@
+package com.cg.allyworld.chatreceiver.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface ReceiverService {
+
+	void sendMessage(Integer senderId, Integer receiverId, String message);
+
+}

@@ -1,0 +1,25 @@
+package com.cg.allyworld.chatsender.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SenderServiceImpl implements SenderService{
+
+	/*
+	 * @Override public void replyingMessage(Integer senderId, Integer receiverId,
+	 * String message) {
+	 * 
+	 * }
+	 */
+
+	@Override
+	public void sendMessage(Integer senderId, Integer receiverId, String message) {
+		System.out.println("Going to database");
+		chat.setSenderId(senderId);;
+		chat.setReceiverId(receiverId);
+		chat.setMessage(message);
+		repository.save(chat);		
+	}
+
+	
+}

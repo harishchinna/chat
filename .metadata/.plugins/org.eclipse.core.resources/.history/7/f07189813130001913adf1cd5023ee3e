@@ -1,0 +1,5 @@
+package com.cg.allyworld.chatsender.entity;
+
+public class Receiver {
+
+}

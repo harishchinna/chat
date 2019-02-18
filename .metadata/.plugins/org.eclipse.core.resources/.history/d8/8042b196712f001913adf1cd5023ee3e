@@ -1,0 +1,13 @@
+package com.cg.allyworld.chatreceiver.entity;
+
+import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Sender {
+
+	@Autowired
+	public RabbitMessagingTemplate messagingTemplate;
+	
+}

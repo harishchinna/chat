@@ -1,0 +1,17 @@
+package com.cg.allyworld.chatsender.entity;
+
+import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Sender {
+
+	@Autowired
+	private RabbitMessagingTemplate template;
+	
+	public void send(Object[] chatArray) {
+		System.out.println(chatArray[0]+""+chatArray[1]+""+chatArray[2]);
+		template.convertAndSend("chatQ", new Object[] {chatArray[0], chatArray[1], chatArray[2]}); 
+	}
+}

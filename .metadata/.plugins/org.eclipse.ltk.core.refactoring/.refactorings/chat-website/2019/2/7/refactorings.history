@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;chat-website/src/main/webapp/WEB-INF/jsp/Replymessage.jsp&apos; to &apos;ReplymessageForm.jsp&apos;" description="Rename resource &apos;Replymessage.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/jsp/Replymessage.jsp" name="ReplymessageForm.jsp" stamp="1550050983136" updateReferences="true"/>
+</session>

@@ -1,0 +1,7 @@
+package com.cg.allyworld.chatreceiver.service;
+
+public interface ReceiverService {
+
+	void sendMessage(Integer senderId, Integer receiverId, String message);
+
+}

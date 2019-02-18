@@ -1,0 +1,5 @@
+package com.cg.allyworld.chatsender.repository;
+
+public interface SenderRepository {
+
+}

@@ -1,0 +1,15 @@
+package com.cg.allyworld.chatsender.entity;
+
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
+
+@RabbitListener(queues = "chatQ")
+@Component
+public class Receiver {
+ 
+	@RabbitHandler
+	public void replyingMessage() {
+		
+	}
+}

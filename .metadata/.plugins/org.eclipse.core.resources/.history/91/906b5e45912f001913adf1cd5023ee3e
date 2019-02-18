@@ -1,0 +1,11 @@
+package com.cg.allyworld.chatsender.service;
+
+public class SenderServiceImpl implements SenderService{
+
+	@Override
+	public void replyingMessage(Integer senderId, Integer receiverId, String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

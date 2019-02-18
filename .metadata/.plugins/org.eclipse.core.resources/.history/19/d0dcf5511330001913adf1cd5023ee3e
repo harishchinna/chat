@@ -1,0 +1,13 @@
+package com.cg.allyworld.chatsender.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SenderServiceImpl implements SenderService{
+
+	@Override
+	public void replyingMessage(Integer senderId, Integer receiverId, String message) {
+		
+	}
+
+}

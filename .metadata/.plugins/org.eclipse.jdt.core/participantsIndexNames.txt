@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\allyworld-chat\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2151052539.index
+\chat-website\src\main\java
